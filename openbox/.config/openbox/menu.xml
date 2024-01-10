@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://openbox.org/                 file:///usr/share/openbox/menu.xsd">
+    <menu id="root-menu" label="OpenBox 3">
+				<item label="Rofi">
+						<action name="Execute">
+								<execute>rofi -modi run,drun,window -lines 8 -padding 18 -width 60 -location 0 -show drun -sidebar-mode -columns 3 -font "Roboto Regular 13"</execute>
+						</action>
+				</item>
+				<item label="Terminal">
+						<action name="Execute">
+								<execute>qterminal</execute>
+						</action>
+				</item>
+				<item label="Web Browser">
+						<action name="Execute">
+								<execute>chromium-browser</execute>
+						</action>
+				</item>
+				<item label="File Manager">
+						<action name="Execute">
+								<execute>pcmanfm-qt</execute>
+						</action>
+				</item>
+				<item label="Text Editor">
+						<action name="Execute">
+								<execute>kate</execute>
+						</action>
+				</item>
+				<item label ="Media Player">
+						<action name="Execute">
+								<execute>vlc</execute>
+						</action>
+				</item>
+				<separator />
+				<menu id="accessories" label="Accessories">
+						<item label="lxqt-runner">
+								<action name="Execute">
+										<execute>lxqt-runner</execute>
+								</action>
+						</item>
+						<item label="Archive Manager">
+								<action name="Execute">
+										<execute>lxqt-archiver</execute>
+								</action>
+						</item>
+						<item label="Kate Text Editor">
+								<action name="Execute">
+										<execute>kate</execute>
+								</action>
+						</item>
+						<item label="Task Manager (htop)">
+								<action name="Execute">
+										<execute>qterminal -e htop</execute>
+								</action>
+						</item>
+				</menu>
+				<menu id="graphics" label="Graphics">
+						<item label="GIMP">
+								<action name="Execute">
+										<execute>gimp</execute>
+								</action>
+						</item>
+						<item label="Inkscape">
+								<action name="Execute">
+										<execute>inkscape</execute>
+								</action>
+						</item>
+						<item label="LXImage">
+								<action name="Execute">
+										<execute>lximage-qt</execute>
+								</action>
+						</item>
+				</menu>
+				<menu id="graphicsScreenshots" label="Take Screenshot">
+						<item label="LXImage-Qt">
+								<action name="Execute">
+										<execute>lximage-qt -s</execute>
+								</action>
+						</item>
+				</menu>
+				<menu id="multimedia" label="Multimedia">
+						<item label="VLC Media Player">
+								<action name="Execute">
+										<execute>vlc</execute>
+								</action>
+						</item>
+						<item label="Volume Control">
+								<action name="Execute">
+										<execute>qterminal -e alsamixer</execute>
+								</action>
+						</item>
+				</menu>
+				<menu id="network" label="Network">
+						<item label="Chromium">
+								<action name="Execute">
+										<execute>chromium-browser</execute>
+								</action>
+						</item>
+						<item label="Falkon">
+								<action name="Execute">
+										<execute>falkon</execute>
+								</action>
+						</item>
+						<item label="Filezilla">
+								<action name="Execute">
+										<execute>filezilla</execute>
+								</action>
+						</item>
+						<item label="Pidgin">
+								<action name="Execute">
+										<execute>pidgin</execute>
+								</action>
+						</item>
+				</menu>
+				<menu id="office" label="Office">
+						<item label="LibreOffice">
+								<action name="Execute">
+										<execute>libreoffice</execute>
+								</action>
+						</item>
+						<item label="Google Drive">
+								<action name="Execute">
+										<execute>chromium-browser https://drive.google.com/</execute>
+								</action>
+						</item>
+						<item label="KCalc">
+								<action name="Execute">
+										<execute>kcalc</execute>
+								</action>
+						</item>
+						<item label="Okular">
+								<action name="Execute">
+										<execute>okular</execute>
+								</action>
+						</item>
+				</menu>
+				<separator />
+				<menu id="settings" label="Settings">
+						<menu id="conkyconfig" label="Conky">
+								<item label="Edit .conkyrc">
+										<action name="Execute">
+												<execute>kate ~/.conkyrc</execute>
+										</action>
+								</item>
+								<item label="Restart Conky">
+										<action name="Execute">
+												<execute>conkywonky</execute>
+										</action>
+								</item>
+								<separator label="Help?" />
+								<item label="man page">
+										<action name="Execute">
+												<execute>terminator -e "man conky"</execute>
+										</action>
+								</item>
+								<item label="Documentation">
+										<action name="Execute">
+												<execute>chromium-browser http://conky.sourceforge.net/documentation.html</execute>
+										</action>
+								</item>
+						</menu>
+						<menu id="obConfig" label="Openbox">
+								<item label="Edit menu.xml">
+										<action name="Execute">
+												<execute>kate ~/.config/openbox/menu.xml</execute>
+										</action>
+								</item>
+								<item label="Edit rc.xml">
+										<action name="Execute">
+												<execute>kate ~/.config/openbox/rc.xml</execute>
+										</action>
+								</item>
+								<item label="Edit autostart">
+										<action name="Execute">
+												<execute>kate ~/.config/openbox/autostart</execute>
+										</action>
+								</item>
+								<separator />
+								<item label="GUI Menu Editor">
+										<action name="Execute">
+												<execute>obmenu3</execute>
+										</action>
+								</item>
+								<item label="GUI Config Tool">
+										<action name="Execute">
+												<execute>obconf-qt</execute>
+										</action>
+								</item>
+								<separator />
+								<item label="Reconfigure">
+										<action name="Reconfigure" />
+								</item>
+								<item label="Restart">
+										<action name="Restart" />
+								</item>
+						</menu>
+						<menu id="polybarconfig" label="Polybar">
+								<item label="Edit config file">
+										<action name="Execute">
+												<execute>kate ~/.config/polybar/config.ini</execute>
+										</action>
+								</item>
+								<item label="Restart Polybar">
+										<action name="Execute">
+												<execute>polybar -r mybar</execute>
+										</action>
+								</item>
+								<separator label="Help?" />
+								<item label="man page">
+										<action name="Execute">
+												<execute>qterminal -e "man polybar"</execute>
+										</action>
+								</item>
+								<item label="Online Help">
+										<action name="Execute">
+												<execute>chromium-browser http://code.google.com/p/tint2/wiki/Welcome</execute>
+										</action>
+								</item>
+						</menu>
+						<item label="LXQt Settings">
+								<action name="Execute">
+										<execute>lxqt-config</execute>
+								</action>
+						</item>
+						<item label="Screensaver">
+								<action name="Execute">
+										<execute>xscreensaver-demo</execute>
+								</action>
+						</item>
+						<item label="Choose Wallpaper">
+								<action name="Execute">
+										<execute>nitrogen ~/Pictures/Wallpapers</execute>
+								</action>
+						</item>
+				</menu>
+				<menu id="system" label="System">
+						<item label="BleachBit">
+								<action name="Execute">
+										<execute>bleachbit</execute>
+								</action>
+						</item>
+						<item label="KBackup">
+								<action  name="Execute">
+										<execute>kbackup</execute>
+								</action>
+						</item>
+						<item label="KDE Partition Manager">
+								<action name="Execute">
+										<execute>partitionmanager</execute>
+								</action>
+						</item>
+						<item label="dnfdragora">
+								<action name="Execute">
+                    <execute>dnfdragora</execute>
+                </action>
+            </item>
+				</menu>
+				<separator />
+				<item label="Leave">
+						<action name="Execute">
+								<execute>lxqt-leave</execute>
+						</action>
+				</item>
+    </menu>
+</openbox_menu>

@@ -1,0 +1,3 @@
+profile {
+  output X11-1 mode 1920x1078 position 0,0
+}

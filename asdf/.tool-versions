@@ -1,0 +1,13 @@
+crystal 1.10.1
+elixir 1.16.0-otp-26
+golang 1.20.3
+groovy 4.0.11
+java temurin-17.0.7+7 temurin-11.0.19+7
+lua 5.4.4
+nodejs 18.16.0
+python system
+perl system
+ruby 3.2.2
+sbt 1.8.2 1.7.2
+scala 3.3.1 2.13.12
+julia 1.9.4

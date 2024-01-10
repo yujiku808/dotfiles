@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+
+<!--
+  This is a very simple config file with many options missing. For a complete
+  set of options with comments, see docs/rc.xml.all
+-->
+
+<labwc_config>
+
+  <core>
+    <gap>6</gap>
+  </core>
+
+  <margins>
+    <top>38</top>
+    <bottom>6</bottom>
+    <left>0</left>
+    <right>0</right>
+  </margins>
+
+  <theme>
+    <name></name>
+    <cornerRadius>0</cornerRadius>
+    <font name="Roboto-Regular" size="10" />
+  </theme>
+
+  <regions>
+    <region name="snap-ul" x="0%" y="0%" width="50%" height="50%" />
+    <region name="snap-ll" x="0%" y="50%" width="50%" height="50%" />
+    <region name="snap-ur" x="50%" y="0%" width="50%" height="50%" />
+    <region name="snap-lr" x="50%" y="50%" width="50%" height="50%" />
+    <region name="dev1-nvim" x="0%" y="0%" width="100%" height="80%" />
+    <region name="dev1-term" x="0%" y="80%" width="100%" height="20%" />
+    <region name="dev2-nvim" x="0%" y="0%" width="50%" height="80%" />
+    <region name="dev2-term" x="0%" y="80%" width="50%" height="20%" />
+    <region name="dev3-nvim" x="0%" y="0%" width="50%" height="70%" />
+    <region name="dev3-term1" x="0%" y="70%" width="50%" height="15%" />
+    <region name="dev3-term2" x="0%" y="85%" width="50%" height="15%" />
+    <region name="stack-top" x="50%" y="0%" width="50%" height="34%" />
+    <region name="stack-mid" x="50%" y="34%" width="50%" height="33%" />
+    <region name="stack-bottom" x="50%" y="67%" width="50%" height="33%" />
+  </regions>
+
+  <keyboard>
+    <default />
+    <!-- Use a different terminal emulator -->
+    <keybind key="W-Return">
+      <action name="Execute" command="qterminal" />
+    </keybind>
+    <keybind key="W-A-m">
+      <action name="Execute" command="fuzzel" />
+    </keybind>
+    <keybind key="W-A-f">
+      <action name="Execute" command="pcmanfm-qt" />
+    </keybind>
+    <keybind key="W-A-b">
+      <action name="Execute" command="chromium-browser" />
+    </keybind>
+    <keybind key="W-A-h">
+      <action name="Execute" command="htop" />
+    </keybind>
+    <!-- Keybindings for windows -->
+    <keybind key="A-w">
+      <action name="ToggleDecorations" />
+    </keybind>
+    <keybind key="A-n">
+      <action name="NextWindow" />
+    </keybind>
+    <keybind key="A-p">
+      <action name="PreviousWindow" />
+    </keybind>
+    <keybind key="A-r">
+      <action name="Raise" />
+    </keybind>
+    <keybind key="A-l">
+      <action name="Lower" />
+    </keybind>
+    <keybind key="C-A-m">
+      <action name="ToggleMaximize" />
+    </keybind>
+    <keybind key="C-A-n">
+      <action name="Iconify" />
+    </keybind>
+    <!-- Snaps and layout -->
+    <keybind key="C-W-f">
+      <action name="ToggleFullscreen" />
+    </keybind>
+    <keybind key="C-W-Left">
+      <action name="SnapToEdge" direction="left" />
+    </keybind>
+    <keybind key="C-W-Right">
+      <action name="SnapToEdge" direction="right" />
+    </keybind>
+    <keybind key="C-W-Up">
+      <action name="SnapToEdge" direction="up" />
+    </keybind>
+    <keybind key="C-W-Down">
+      <action name="SnapToEdge" direction="down" />
+    </keybind>
+    <keybind key="C-W-c">
+      <action name="SnapToEdge" direction="center" />
+    </keybind>
+    <keybind key="C-W-h">
+      <action name="SnapToRegion" region="snap-ul" />
+    </keybind>
+    <keybind key="C-W-j">
+      <action name="SnapToRegion" region="snap-ll" />
+    </keybind>
+    <keybind key="C-W-l">
+      <action name="SnapToRegion" region="snap-ur" />
+    </keybind>
+    <keybind key="C-W-k">
+      <action name="SnapToRegion" region="snap-lr" />
+    </keybind>
+    <keybind key="C-W-u">
+      <action name="SnapToRegion" region="dev1-nvim" />
+    </keybind>
+    <keybind key="C-W-i">
+      <action name="SnapToRegion" region="dev1-term" />
+    </keybind>
+    <keybind key="C-W-o">
+      <action name="SnapToRegion" region="dev2-nvim" />
+    </keybind>
+    <keybind key="C-W-p">
+      <action name="SnapToRegion" region="dev2-term" />
+    </keybind>
+    <keybind key="C-W-m">
+      <action name="SnapToRegion" region="dev3-nvim" />
+    </keybind>
+    <keybind key="C-W-Comma">
+      <action name="SnapToRegion" region="dev3-term1" />
+    </keybind>
+    <keybind key="C-W-Period">
+      <action name="SnapToRegion" region="dev3-term2" />
+    </keybind>
+    <keybind key="C-W-7">
+      <action name="SnapToRegion" region="stack-top" />
+    </keybind>
+    <keybind key="C-W-8">
+      <action name="SnapToRegion" region="stack-mid" />
+    </keybind>
+    <keybind key="C-W-9">
+      <action name="SnapToRegion" region="stack-bottom" />
+    </keybind>
+    <!--
+      Remove a previously defined keybind
+      A shorter alternative is <keybind key="W-F4" />
+    -->
+    <keybind key="W-F4">
+      <action name="None" />
+    </keybind>
+    <keybind key="W-a">
+      <action name="None" />
+    </keybind>
+    <keybind key="A-Tab">
+      <action name="None" />
+    </keybind>
+    <keybind key="A-Left">
+      <action name="None" />
+    </keybind>
+    <keybind key="A-Right">
+      <action name="None" />
+    </keybind>
+    <keybind key="A-F3">
+      <action name="None" />
+    </keybind>
+  </keyboard>
+
+  <mouse>
+    <default />
+    <!-- Show a custom menu on desktop right click -->
+    <context name="Root">
+      <mousebind button="Right" action="Press">
+        <action name="ShowMenu" menu="some-custom-menu" />
+      </mousebind>
+    </context>
+  </mouse>
+
+  <windowRules>
+    <!-- Property -->
+    <windowRule identifier="chromium-browser" serverDecoration="no" />
+    <windowRule identifier="pcmanfm-qt" serverDecoration="no" />
+    <windowRule identifier="kate" serverDecoration="no" />
+  </windowRules>
+
+</labwc_config>

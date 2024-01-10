@@ -1,0 +1,87 @@
+!! menu background
+menu.items.bg: flat
+menu.items.bg.color: #494d64
+menu.overlap.x: -10
+
+!! menu text
+menu.items.text.color: #a5adcb
+menu.items.justify: left
+menu.items.disabled.text.color: #6e738d
+
+!! menu separator
+menu.separator.padding.height: 2
+menu.separator.color: #494d64
+
+!! menu border
+menu.border.width: 8
+menu.border.color: #494d64
+
+!! menu headers
+menu.title.bg: flat
+menu.title.bg.color: #494d64
+menu.title.text.color: #cad3f5
+menu.title.text.justify: center
+
+!! selected menu item
+menu.items.active.bg: flat
+menu.items.active.bg.color: #8aadf4
+menu.items.active.text.color: #24273a
+
+!! titlebar
+window.active.title.bg: flat
+window.active.title.bg.color: #8aadf4
+window.inactive.title.bg: flat
+window.inactive.title.bg.color: #363a4f
+
+!! titlebar text
+window.label.text.justify: center
+window.active.label.bg: parentrelative
+window.active.label.text.color: #24273a
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #363a4f
+
+!! window buttons
+window.*.button.*.bg: parentrelative
+window.active.button.*.hover.bg: flat
+window.inactive.button.*.hover.bg: parentrelative
+window.*.button.*.pressed.bg: flat
+window.active.button.*.hover.bg.color: #8aadf4
+window.active.button.*.hover.image.color: #a5adcb
+window.active.button.*.pressed.bg.color: #8aadf4
+window.active.button.*.image.color: #24273a
+window.active.button.disabled.image.color: #a5adcb
+window.inactive.button.*.image.color: #363a4f
+window.inactive.button.disabled.image.color: #a5adcb
+
+!! borders
+window.active.border.color: #8aadf4
+window.inactive.border.color: #8aadf4
+padding.width: 8
+padding.height: 8
+window.client.padding.width: 0
+window.client.padding.height: 0
+border.width: 2
+window.handle.width: 2
+window.active.client.color:  #494d64
+window.inactive.client.color:  #494d64
+window.active.handle.bg: flat
+window.active.handle.bg.color: #494d64
+window.inactive.handle.bg: flat
+window.inactive.handle.bg.color: #494d64
+window.active.grip.bg: flat
+window.active.grip.bg.color: #494d64
+window.inactive.grip.bg: flat
+window.inactive.grip.bg.color: #494d64
+
+!! on-screen displays
+osd.border.width: 1
+osd.border.color: #494d64
+osd.label.text.color: #a5adcb
+osd.bg: flat solid
+osd.bg.color: #494d64
+osd.label.bg: flat solid
+osd.label.bg.color: #494d64
+osd.hilight.bg: flat solid
+osd.hilight.bg.color: #ed8796
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #6e738d
